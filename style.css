@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.hero{
+    height: calc(100vh - 55px);
+}
+
+.b{
+    scrollbar-width: none;
+}
+
+.scroll-container {
+    display: flex;             /* Ensures items stay in a row */
+    overflow-x: auto;          /* Allows horizontal scrolling */
+    white-space: nowrap;       /* Prevents wrapping */
+    gap: 10px;                 /* Optional: adds spacing between items */
+    scrollbar-width: none;  
+  }
+
