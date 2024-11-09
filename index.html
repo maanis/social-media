@@ -15,31 +15,39 @@
 <body>
 
     <div class="flex w-full justify-between px-8 h-[55px] bg-white items-center">
-        <div class="flex items-center gap-24 max-lg:gap-12">
+        <div class="flex items-center gap-24 max-lg:gap-12 max-md:gap-8 max-sm:gap-3">
             <div class="logo"><span class="font-semibold">We</span>Share</div>
             <div class="input relative">
-                <i class="fas fa-search absolute text-zinc-400 left-2 top-1/2 -translate-y-1/2"></i>
-                <input class="p-1 outline-none w-[450px] max-lg:w-[385px] bg-[#f1f1f1] rounded-md pl-8"
+                <i class="fas fa-search absolute max-sm:hidden text-zinc-400 left-2 top-1/2 -translate-y-1/2"></i>
+                <input
+                    class="p-1 outline-none w-[450px] max-lg:w-[385px] max-md:w-[260px] max-sm:hidden bg-[#f1f1f1] rounded-md pl-8"
                     placeholder="Search" type="text">
             </div>
         </div>
         <div class="items flex items-center gap-4">
-            <i class="fa-solid w-8 h-8 flex justify-center items-center bg-[#f1f1f1] rounded-md fa-bell"></i>
-            <i class="fa-solid w-8 h-8 flex justify-center items-center bg-[#f1f1f1] rounded-md fa-bookmark"></i>
+            <i
+                class="fa-solid w-8 h-8 max-sm:w-4 max-sm:h-4 flex justify-center items-center bg-[#f1f1f1] rounded-md fa-bell"></i>
+            <i
+                class="fa-solid w-8 h-8 max-sm:w-4 max-sm:h-4 flex justify-center items-center bg-[#f1f1f1] rounded-md fa-bookmark"></i>
             <div class="logo"><img src="/owner.jpeg" class="w-7 rounded-full h-7 object-cover object-top" alt=""></div>
-            <div class="name">Admin
+            <div class="name max-md:text-sm max-sm:hidden">Admin
                 <i class="fa-solid fa-chevron-down"></i>
             </div>
 
         </div>
     </div>
 
-    <div class="flex hero w-full gap-4 p-4">
+    <div class="flex hero w-full gap-4 p-4 max-md:p-3">
 
 
-        <div class="box-a w-[20%] h-full flex flex-col gap-4 rounded-md">
-            <div class="a h-[30%] max-lg:h-[25%] w-full bg-white rounded-md p-2">
-                <div class="h-full bg-[#f1f1f1] p-2 rounded-md">
+        <div
+            class="box-a w-[20%] max-md:w-[6%] max-sm:absolute max-sm:w-full bottom-0 left-0 max-sm:h-[6%] h-full flex flex-col gap-4 rounded-md">
+            <div
+                class="a h-[30%] max-lg:h-[25%] max-md:h-[7.5%] max-md:rounded-full w-full max-sm:hidden bg-white rounded-md p-2 max-md:p-0">
+                <img src="/owner.jpeg"
+                    class="w-full h-full hidden max-md:block rounded-full max-sm:hidden object-cover object-top" alt="">
+
+                <div class="h-full bg-[#f1f1f1] p-2 max-md:hidden  rounded-md">
                     <div class="flex gap-4 max-lg:gap-2 max-lg:items-center tracking-tight max-lg:tracking-normal">
                         <img src="/owner.jpeg"
                             class="w-12 h-12 max-lg:w-7 max-lg:h-7 rounded-full  object-cover object-top" alt="">
@@ -65,64 +73,78 @@
                 </div>
             </div>
 
-            <div class="b h-[60%] max-lg:h-[65%] p-3 max-lg:p-2 bg-white rounded-md overflow-y-scroll">
-                <div class="flex flex-col">
-                    <ul class="flex flex-col gap-2">
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-white bg-blue-500 rounded-md">
-                            <i class="fa-solid text-white fa-house text-[12px] w-6"></i><span
+            <div
+                class="b h-[60%] max-lg:h-[65%] max-md:h-[94%] max-sm:bg-zinc-200 max-sm:w-full max-sm:h-[150%] max-sm:rounded-none p-3 max-lg:p-2 max-md:p-0  bg-white rounded-md overflow-y-scroll">
+                <div class="flex flex-col max-sm:h-full">
+                    <ul
+                        class="flex flex-col max-sm:flex-row gap-2 max-sm:justify-around max-sm:items-center max-sm:h-full">
+                        <li
+                            class="w-full max-sm:w-auto  flex max-lg:text-sm items-center px-3 py-2 text-white bg-blue-500 rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-solid text-white fa-house text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Feed</span>
                         </li>
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md">
-                            <i class="fa-solid fa-users text-zinc-500 text-[12px] w-6"></i><span
+                        <li
+                            class="w-full max-sm:w-auto flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-solid fa-users text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Friends</span>
                         </li>
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md">
-                            <i class="fa-regular fa-calendar-days text-zinc-500 text-[12px] w-6"></i><span
+                        <li
+                            class="w-full max-sm:w-auto flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md max-md:p-2 max-md:justify-center">
+                            <i
+                                class="fa-regular fa-calendar-days text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Events</span>
                         </li>
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md">
-                            <i class="fa-solid fa-video text-zinc-500 text-[12px] w-6"></i><span
+                        <li
+                            class="w-full max-sm:w-auto flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-solid fa-video text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Watch Videos</span>
                         </li>
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md">
-                            <i class="fa-solid fa-image text-zinc-500 text-[12px] w-6"></i><span
+                        <li
+                            class="w-full max-sm:w-auto flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-solid fa-image text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Photos</span>
                         </li>
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md">
-                            <i class="fa-solid fa-cart-shopping text-zinc-500 text-[12px] w-6"></i><span
+                        <li
+                            class="w-full max-sm:w-auto flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-solid fa-cart-shopping text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Marketplace</span>
                         </li>
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md">
-                            <i class="fa-regular fa-file text-zinc-500 text-[12px] w-6"></i><span
+                        <li
+                            class="w-full max-sm:w-auto flex max-lg:text-sm items-center px-3 py-2 text-zinc-500  rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-regular fa-file text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Files</span>
                         </li>
                     </ul>
                     <div
-                        class="seperation h-[1px] bg-zinc-300 w-[80%] flex justify-center relative left-1/2 -translate-x-1/2">
+                        class="seperation max-sm:hidden h-[1px] max-md:mt-2 bg-zinc-300 w-[80%] flex justify-center relative left-1/2 -translate-x-1/2">
                     </div>
-                    <p class="text-zinc-500 px-3 mt-3 text-[12px] uppercase">Pages You Like</p>
-                    <ul class="flex flex-col gap-2 mt-1">
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-black  rounded-md">
-                            <i class="fa-brands fa-uikit text-zinc-500 text-[12px] w-6"></i><span
+                    <p class="text-zinc-500 px-3 mt-3 text-[12px] uppercase max-md:hidden">Pages You Like</p>
+                    <ul class="flex flex-col gap-2 mt-1 max-sm:hidden max-md:mt-2">
+                        <li
+                            class="w-full flex max-lg:text-sm items-center px-3 py-2 text-black  rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-brands fa-uikit text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">UI/UX</span>
                         </li>
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-black  rounded-md">
-                            <i class="fa-solid fa-code text-zinc-500 text-[12px] w-6"></i><span
+                        <li
+                            class="w-full flex max-lg:text-sm items-center px-3 py-2 text-black  rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-solid fa-code text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Web Desgner</span>
                         </li>
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-black  rounded-md">
-                            <i class="fa-brands fa-dribbble text-zinc-500 text-[12px] w-6"></i><span
+                        <li
+                            class="w-full flex max-lg:text-sm items-center px-3 py-2 text-black  rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-brands fa-dribbble text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Dribble Community</span>
                         </li>
-                        <li class="w-full flex max-lg:text-sm items-center px-3 py-2 text-black  rounded-md">
-                            <i class="fa-brands fa-behance text-zinc-500 text-[12px] w-6"></i><span
+                        <li
+                            class="w-full flex max-lg:text-sm items-center px-3 py-2 text-black  rounded-md max-md:p-2 max-md:justify-center">
+                            <i class="fa-brands fa-behance text-zinc-500 text-[12px] w-6 max-md:w-auto "></i><span
                                 class="max-md:hidden">Behance</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="links flex flex-wrap gap-x-4 gap-y-2 items-center text-zinc-500 text-[12px]">
+            <div class="links max-md:hidden flex flex-wrap gap-x-4 gap-y-2 items-center text-zinc-500 text-[12px]">
                 <p>Privacy Terms</p>
                 <p>Advertizing</p>
                 <p>Cookies</p>
@@ -133,7 +155,7 @@
 
 
 
-        <div class="box-b w-[60%] flex flex-col gap-4 h-full rounded-md">
+        <div class="box-b w-[60%] max-md:w-[74%] max-sm:w-[100%] flex flex-col gap-4 h-full rounded-md">
 
             <div class="c h-[15%] w-full bg-white items-center scroll-container rounded-md flex px-3">
                 <div class="flex h-fullitems-center gap-3 w-auto shrink-0">
@@ -194,7 +216,7 @@
 
 
 
-        <div class="box-c flex flex-col gap-4 w-[20%] h-full rounded-md">
+        <div class="box-c flex flex-col gap-4 w-[20%] max-sm:hidden h-full rounded-md">
             <div class="e h-[75%] bg-white rounded-md"></div>
             <div class="f h-[25%] bg-white rounded-md"></div>
         </div>
