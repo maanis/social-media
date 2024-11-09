@@ -21,10 +21,10 @@ body{
 }
 
 .scroll-container {
-    display: flex;             /* Ensures items stay in a row */
-    overflow-x: auto;          /* Allows horizontal scrolling */
-    white-space: nowrap;       /* Prevents wrapping */
-    gap: 10px;                 /* Optional: adds spacing between items */
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
     scrollbar-width: none;  
   }
 
